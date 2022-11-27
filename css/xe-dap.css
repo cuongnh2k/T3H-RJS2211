@@ -45,7 +45,7 @@ input, textarea, button {
 /*--------------------------------------*/
 .header {
     min-height: 80rem;
-    background-image: url('../image/bg-header.png');
+    background-image: url("/image/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover; /* co gian bang header */
     background-position: center center; /* nam chinh giua */
@@ -130,7 +130,7 @@ input, textarea, button {
 }
 
 .bike__01__01 {
-    background-image: url('../image/bike-01-img-01.png');
+    background-image: url("/image/bike-01-img-01.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -142,7 +142,7 @@ input, textarea, button {
 }
 
 .bike__01__03 {
-    background-image: url('../image/bike-01-img-02.png');
+    background-image: url("/image/bike-01-img-02.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
