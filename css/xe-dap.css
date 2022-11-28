@@ -45,7 +45,7 @@ input, textarea, button {
 /*--------------------------------------*/
 .header {
     min-height: 80rem;
-    background-image: url("../image/bg-header.png");
+    background-image: url("https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg");
     background-repeat: no-repeat;
     background-size: cover; /* co gian bang header */
     background-position: center center; /* nam chinh giua */
