@@ -141,6 +141,7 @@ input, textarea, button {
     font-size: 1.8rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .bike__xx__02__text {
@@ -180,7 +181,7 @@ input, textarea, button {
     grid-template-columns: 67% 33%;
 }
 
-.bike__01__01 {
+.bike__01__01__bg {
     background-image: url("../image/bike-01-img-01.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,10 +201,44 @@ input, textarea, button {
     grid-template-columns: 33% 67%;
 }
 
+.bike__02__01__bg {
+    background-image: url("../image/bike-02-img-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.bike__02__02__bg {
+    background-image: url("../image/bike-02-img-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /*-----*/
 .bike__03__grid {
     display: grid;
     grid-template-columns: 33% 34% 33%;
+}
+
+.bike__03__01__bg {
+    background-image: url("../image/bike-03-img-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.bike__03__03__bg {
+    background-image: url("../image/bike-03-img-03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bike__03__02__bg {
+    background-image: url("../image/bike-03-img-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /*----------*/
