@@ -42,7 +42,7 @@ input, textarea, button {
     margin: 0 auto;
 }
 
-/*--------------------------------------*/
+/*----------*/
 .header {
     min-height: 80rem;
     background-image: url("../image/bg-header.png");
@@ -87,7 +87,7 @@ input, textarea, button {
     position: relative;
 }
 
-/*-------------------------------------*/
+/*----------*/
 .about__us {
     min-height: 47rem;
     background-color: var(--bgLight);
@@ -114,19 +114,48 @@ input, textarea, button {
     margin-right: 26rem;
 }
 
-/*----------------------------------------*/
-.work__grid__container {
+/*----------*/
+.work__grid {
     display: grid;
     grid-template-rows: 60rem 60rem 60rem;
 }
 
-.bike__grid__container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 .img__center {
     margin: auto;
+}
+
+.bike__xx__02 {
+    display: grid;
+    grid-template-rows: 67% 33%;
+    text-align: center;
+}
+
+.bike__xx__02__icon {
+    margin-top: 7rem;
+}
+
+.bike__xx__02__title {
+    font-weight: 700;
+    color: var(--headingColor);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.bike__xx__02__text {
+    text-align: justify;
+    font-weight: 400;
+    color: var(--textColor);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+/*-----*/
+.bike__01__grid {
+    display: grid;
+    grid-template-columns: 67% 33%;
 }
 
 .bike__01__01 {
@@ -134,19 +163,31 @@ input, textarea, button {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    grid-area: 1 / 1 / span 3 / span 2;
 }
 
-.bike__01__02 {
-    grid-area: 1 / 3 / span 2 / span 1;
-}
-
-.bike__01__03 {
+.bike__01__02__bg {
     background-image: url("../image/bike-01-img-02.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/*-----*/
+.bike__02__grid {
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+
+/*-----*/
+.bike__03__grid {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+/*----------*/
+.twitter{
+    height: 23.5rem;
+    background-color: var(--bgLight);
+}
 
 
 
