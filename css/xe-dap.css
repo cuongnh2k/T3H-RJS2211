@@ -36,7 +36,8 @@ input, textarea, button {
     --textLine: #d7d7d7;
     --bgWhite: #fff;
     --bgLight: #f7f7f7;
-    --swipeColor: #a9afb3
+    --swipeColor: #a9afb3;
+    --bgDiscover: #282f35;
 }
 
 .wrapper {
@@ -322,23 +323,35 @@ input, textarea, button {
 }
 
 .shop__01__01__01 {
-
+    background-image: url('../image/shop-img-01-01-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shop__01__01__02 {
-
+    background-image: url('../image/shop-img-01-01-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shop__01__02 {
-
+    background-image: url('../image/shop-img-01-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shop__02 {
     grid-area: 1 / 2 / span 2 / span 1;
+    background-image: url('../image/shop-img-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shop__03 {
     grid-area: 1 /  3 / span 2 / span 1;
+    background-image: url('../image/shop-img-03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .shop__04 {
@@ -348,11 +361,59 @@ input, textarea, button {
 }
 
 .shop__04__01 {
+    background-image: url('../image/shop-img-04-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
 
+.shop__04__01__content {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.shop__04__01__icon {
+    width: 5.1rem;
+    margin: 0 auto;
+}
+
+.shop__04__01__text {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
 }
 
 .shop__04__02 {
+    background-image: url('../image/shop-img-04-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+/*----------*/
+.discover {
+    background-color: var(--bgDiscover);
+    height: 20rem;
+    width: 100%;
+    display: flex;
+}
+
+.discover__content {
+    margin: auto;
+    height: 5rem;
+    width: 30rem;
+    border: 1px var(--bgLight) solid;
+    display: flex;
+}
+
+.discover__text {
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 1.4rem;
+    margin: auto;
+    font-weight: 700;
 }
 
 
