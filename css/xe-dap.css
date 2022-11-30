@@ -88,6 +88,7 @@ input, textarea, button {
     font-weight: 700;
     display: block;
     position: relative;
+    letter-spacing: 0.3rem;
 }
 
 /*----------*/
@@ -107,6 +108,7 @@ input, textarea, button {
     color: var(--headingColor);
     margin-top: 3rem;
     margin-bottom: 2rem;
+    letter-spacing: 0.3rem;
 }
 
 .about_us__text {
@@ -144,6 +146,7 @@ input, textarea, button {
     margin-top: 3rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
+    letter-spacing: 0.3rem;
 }
 
 .bike__xx__02__text {
@@ -265,16 +268,20 @@ input, textarea, button {
 
 .twitter__title__01 {
     color: var(--headingColor);
+    letter-spacing: 0.2rem;
+    font-weight: 700;
 }
 
 .twitter__title__02 {
     color: var(--textColor);
+    font-weight: 300;
 }
 
 .twitter__text {
     color: var(--textColor);
     font-size: 2.4rem;
     line-height: 1.8;
+    font-style: italic;
 }
 
 .swipe_flex {
@@ -361,20 +368,39 @@ input, textarea, button {
 }
 
 .shop__04__01 {
+    display: flex;
+    position: relative;
+}
+
+.shop__04__01__bg__img {
     background-image: url('../image/shop-img-04-01.png');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__04__01__bg__color {
+    background-color: #73c0a0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.8;
     display: flex;
 }
 
 .shop__04__01__content {
-    align-items: flex-start;
-    justify-content: center;
+    margin: auto;
 }
 
 .shop__04__01__icon {
-    width: 5.1rem;
-    margin: 0 auto;
+    display: flex;
+}
+
+.shop__04__01__icon img {
+    margin: auto;
 }
 
 .shop__04__01__text {
@@ -383,6 +409,7 @@ input, textarea, button {
     font-size: 1.4rem;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 0.3rem;
 }
 
 .shop__04__02 {
@@ -416,6 +443,117 @@ input, textarea, button {
     font-weight: 700;
 }
 
+/*----------*/
+.mailing {
+    height: 47rem;
+    display: flex;
 
+}
 
+.mailing__content {
+    margin: auto;
+    width: 53rem;
+}
 
+.mailing__logo {
+    display: flex;
+}
+
+.mailing__logo img {
+    margin: auto;
+}
+
+.mailing__claim {
+    text-align: center;
+    font-weight: 400;
+    color: var(--textColor);
+    font-size: 2.4rem;
+    margin: 3rem 0;
+}
+
+.mailing__input__text {
+    width: 40rem;
+    height: 5.2rem;
+    font-size: 2rem;
+    color: var(--textColor);
+    opacity: 0.5;
+    border: 1px var(--textColor) solid;
+    padding: 2rem;
+}
+
+.mailing__input__submit {
+    width: 12rem;
+    float: right;
+    height: 5.2rem;
+    font-size: 2.4rem;
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--bgWhite);
+}
+
+/*----------*/
+
+.footer {
+    height: 25rem;
+    background-color: var(--bgLight);
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.footer__01 {
+    padding-left: 25rem;
+    color: var(--textColor);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    display: flex;
+}
+
+.footer__01__content p:first-child {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.footer__01__content {
+    margin: auto;
+}
+
+.footer__02 {
+    display: flex;
+}
+
+.footer__02__content {
+    margin: auto;
+}
+
+.footer__02__content i{
+    margin: 0.5rem;
+}
+
+.footer__02__content :nth-of-type(1) {
+    color: #78cdf0;
+}
+
+.footer__02__content :nth-of-type(2) {
+    color: #537bbd;
+}
+
+.footer__02__content :nth-of-type(3) {
+    color: #537bbd;
+}
+
+.footer__03 {
+    display: flex;
+}
+
+.footer__03__content {
+    margin: auto;
+    display: flex;
+}
+
+.footer__03__text {
+    display: flex;
+}
+
+.footer__03__text p {
+    margin: auto 1rem auto auto;
+}
