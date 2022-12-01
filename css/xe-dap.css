@@ -556,4 +556,7 @@ input, textarea, button {
 
 .footer__03__text p {
     margin: auto 1rem auto auto;
+    color: var(--textColor);
+    font-size: 1.4rem;
+    font-style: italic;
 }
