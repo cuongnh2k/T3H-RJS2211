@@ -48,7 +48,7 @@ input, textarea, button {
 /*----------*/
 .header {
     min-height: 80rem;
-    background-image: url("../image/bg-header.png");
+    background-image: url("../image/xe-dap/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover; /* co gian bang header */
     background-position: center center; /* nam chinh giua */
@@ -187,14 +187,14 @@ input, textarea, button {
 }
 
 .bike__01__01__bg {
-    background-image: url("../image/bike-01-img-01.png");
+    background-image: url("../image/xe-dap/bike-01-img-01.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
 
 .bike__01__02__bg {
-    background-image: url("../image/bike-01-img-02.png");
+    background-image: url("../image/xe-dap/bike-01-img-02.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -207,14 +207,14 @@ input, textarea, button {
 }
 
 .bike__02__01__bg {
-    background-image: url("../image/bike-02-img-01.png");
+    background-image: url("../image/xe-dap/bike-02-img-01.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
 
 .bike__02__02__bg {
-    background-image: url("../image/bike-02-img-02.png");
+    background-image: url("../image/xe-dap/bike-02-img-02.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -227,20 +227,20 @@ input, textarea, button {
 }
 
 .bike__03__01__bg {
-    background-image: url("../image/bike-03-img-01.png");
+    background-image: url("../image/xe-dap/bike-03-img-01.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
 
 .bike__03__03__bg {
-    background-image: url("../image/bike-03-img-03.png");
+    background-image: url("../image/xe-dap/bike-03-img-03.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bike__03__02__bg {
-    background-image: url("../image/bike-03-img-02.png");
+    background-image: url("../image/xe-dap/bike-03-img-02.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -372,7 +372,7 @@ input, textarea, button {
 }
 
 .shop__01__01__01__bg__img {
-    background-image: url('../image/shop-img-01-01-01.png');
+    background-image: url('../image/xe-dap/shop-img-01-01-01.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -381,7 +381,7 @@ input, textarea, button {
 }
 
 .shop__01__01__02__bg__img {
-    background-image: url('../image/shop-img-01-01-02.png');
+    background-image: url('../image/xe-dap/shop-img-01-01-02.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -390,7 +390,7 @@ input, textarea, button {
 }
 
 .shop__01__02__bg__img {
-    background-image: url('../image/shop-img-01-02.png');
+    background-image: url('../image/xe-dap/shop-img-01-02.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -403,7 +403,7 @@ input, textarea, button {
 }
 
 .shop__02__bg__img {
-    background-image: url('../image/shop-img-02.png');
+    background-image: url('../image/xe-dap/shop-img-02.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -416,7 +416,7 @@ input, textarea, button {
 }
 
 .shop__03__bg__img {
-    background-image: url('../image/shop-img-03.png');
+    background-image: url('../image/xe-dap/shop-img-03.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -431,7 +431,7 @@ input, textarea, button {
 }
 
 .shop__04__01__bg__img {
-    background-image: url('../image/shop-img-04-01.png');
+    background-image: url('../image/xe-dap/shop-img-04-01.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -440,7 +440,7 @@ input, textarea, button {
 }
 
 .shop__04__02__bg__img {
-    background-image: url('../image/shop-img-04-02.png');
+    background-image: url('../image/xe-dap/shop-img-04-02.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
