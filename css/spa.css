@@ -1,0 +1,592 @@
+/* common css */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer; /* ban tay */
+}
+
+input, textarea, button {
+    outline: none;
+    box-shadow: none;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --primaryColor: #64c29e;
+    --headingColor: #353738;
+    --textColor: #848789;
+    --textLine: #d7d7d7;
+    --bgWhite: #fff;
+    --bgLight: #f7f7f7;
+    --swipeColor: #a9afb3;
+    --bgDiscover: #282f35;
+}
+
+.wrapper {
+    max-width: 160rem;
+    margin: 0 auto;
+}
+
+/*----------*/
+.header {
+    min-height: 80rem;
+    background-image: url("../image/xe-dap/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* co gian bang header */
+    background-position: center center; /* nam chinh giua */
+    display: flex; /* header nam tren 1 dong */
+    justify-content: center; /* can giua nav theo chuc x */
+    align-items: flex-start; /* can len dau nav theo chuc y */
+}
+
+.nav {
+    margin-top: 3.5rem;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center; /* can li chinh giua ul */
+}
+
+.nav__item {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+}
+
+.nav__item:first-child::after, .nav__item:nth-child(4)::after {
+    content: '.';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    color: var(--headingColor);
+}
+
+.nav__link {
+    color: var(--headingColor);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    letter-spacing: 0.3rem;
+}
+
+/*----------*/
+.about__us {
+    min-height: 47rem;
+    background-color: var(--bgLight);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about__us__icon {
+    margin-top: 12rem;
+}
+
+.about__us__title {
+    font-weight: 700;
+    color: var(--headingColor);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+.about_us__text {
+    color: var(--textColor);
+    font-weight: 400;
+    line-height: 1.8;
+    margin-left: 26rem;
+    margin-right: 26rem;
+}
+
+/*----------*/
+.work__grid {
+    display: grid;
+    grid-template-rows: 60rem 60rem 60rem;
+}
+
+.img__center {
+    margin: auto;
+}
+
+.bike__xx__02 {
+    display: grid;
+    grid-template-rows: 67% 33%;
+    text-align: center;
+}
+
+.bike__xx__02__icon {
+    margin-top: 7rem;
+}
+
+.bike__xx__02__title {
+    font-weight: 700;
+    color: var(--headingColor);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.bike__xx__02__text {
+    text-align: justify;
+    font-weight: 400;
+    color: var(--textColor);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.bike__xx__02__line {
+    width: 5rem;
+    border-top: 1px var(--textLine) solid;
+    margin: 4rem auto 5rem;
+}
+
+.bike__xx__02__pointer {
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    background-color: var(--bgWhite);
+    transform: rotate(45deg);
+}
+
+.bike__xx__02__top__bg {
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    top: -1rem;
+}
+
+/*-----*/
+.bike__01__grid {
+    display: grid;
+    grid-template-columns: 67% 33%;
+}
+
+.bike__01__01__bg {
+    background-image: url("../image/xe-dap/bike-01-img-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.bike__01__02__bg {
+    background-image: url("../image/xe-dap/bike-01-img-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*-----*/
+.bike__02__grid {
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+
+.bike__02__01__bg {
+    background-image: url("../image/xe-dap/bike-02-img-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.bike__02__02__bg {
+    background-image: url("../image/xe-dap/bike-02-img-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*-----*/
+.bike__03__grid {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.bike__03__01__bg {
+    background-image: url("../image/xe-dap/bike-03-img-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.bike__03__03__bg {
+    background-image: url("../image/xe-dap/bike-03-img-03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bike__03__02__bg {
+    background-image: url("../image/xe-dap/bike-03-img-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*----------*/
+.twitter {
+    height: 47rem;
+    background-color: var(--bgLight);
+    font-weight: 400;
+    text-align: center;
+    padding-right: 28rem;
+    padding-left: 28rem;
+}
+
+.twitter__img {
+    margin-top: 12.5rem;
+}
+
+.twitter__title {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.twitter__title__01 {
+    color: var(--headingColor);
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+.twitter__title__02 {
+    color: var(--textColor);
+    font-weight: 300;
+}
+
+.twitter__text {
+    color: var(--textColor);
+    font-size: 2.4rem;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.swipe_flex {
+    width: 100%;
+}
+
+.swipe {
+    margin: auto;
+}
+
+.swipe_active {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--swipeColor);
+    border-radius: 50%;
+    border: 1px var(--swipeColor) solid;
+    display: inline-block;
+    margin: 8rem 0.75rem 0;
+}
+
+.swipe_none_active {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px var(--swipeColor) solid;
+    display: inline-block;
+    margin: 8rem 0.75rem 0;
+}
+
+/*---------*/
+.shop__grid {
+    display: grid;
+    grid-template-columns: 33% 17% 17% 33%;
+    height: 54rem;
+}
+
+.shop__container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.shop__bg__color {
+    background-color: #73c0a0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    display: flex;
+}
+
+.shop__bg__color:hover {
+    opacity: 0.8;
+}
+
+.shop__content {
+    margin: auto;
+}
+
+.shop__icon {
+    display: flex;
+}
+
+.shop__icon img {
+    margin: auto;
+}
+
+.shop__text {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.shop__01 {
+    grid-area: 1 / 1 / span 2 / span 1;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.shop__01__01 {
+    grid-template-columns: 50% 50%;
+    display: grid;
+}
+
+.shop__01__01__01__bg__img {
+    background-image: url('../image/xe-dap/shop-img-01-01-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__01__01__02__bg__img {
+    background-image: url('../image/xe-dap/shop-img-01-01-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__01__02__bg__img {
+    background-image: url('../image/xe-dap/shop-img-01-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__02 {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.shop__02__bg__img {
+    background-image: url('../image/xe-dap/shop-img-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__03 {
+    grid-area: 1 /  3 / span 2 / span 1;
+}
+
+.shop__03__bg__img {
+    background-image: url('../image/xe-dap/shop-img-03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__04 {
+    grid-area: 1 / 4 / span 2 / span 2;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.shop__04__01__bg__img {
+    background-image: url('../image/xe-dap/shop-img-04-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shop__04__02__bg__img {
+    background-image: url('../image/xe-dap/shop-img-04-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*----------*/
+.discover {
+    background-color: var(--bgDiscover);
+    height: 20rem;
+    width: 100%;
+    display: flex;
+}
+
+.discover__content {
+    margin: auto;
+    height: 5rem;
+    width: 30rem;
+    border: 1px var(--bgLight) solid;
+    display: flex;
+}
+
+.discover__text {
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 1.4rem;
+    margin: auto;
+    font-weight: 700;
+}
+
+/*----------*/
+.mailing {
+    height: 47rem;
+    display: flex;
+
+}
+
+.mailing__content {
+    margin: auto;
+    width: 53rem;
+}
+
+.mailing__logo {
+    display: flex;
+}
+
+.mailing__logo img {
+    margin: auto;
+}
+
+.mailing__claim {
+    text-align: center;
+    font-weight: 400;
+    color: var(--textColor);
+    font-size: 2.4rem;
+    margin: 3rem 0;
+}
+
+.mailing__input__text {
+    width: 40rem;
+    height: 5.2rem;
+    font-size: 2rem;
+    color: var(--textColor);
+    opacity: 0.5;
+    border: 1px var(--textColor) solid;
+    padding: 2rem;
+}
+
+.mailing__input__submit {
+    width: 12rem;
+    float: right;
+    height: 5.2rem;
+    font-size: 2.4rem;
+    background-color: var(--primaryColor);
+    border: none;
+    color: var(--bgWhite);
+}
+
+/*----------*/
+
+.footer {
+    height: 25rem;
+    background-color: var(--bgLight);
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.footer__01 {
+    padding-left: 25rem;
+    color: var(--textColor);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    display: flex;
+}
+
+.footer__01__content p:first-child {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.footer__01__content {
+    margin: auto;
+}
+
+.footer__02 {
+    display: flex;
+}
+
+.footer__02__content {
+    margin: auto;
+}
+
+.footer__02__content i {
+    margin: 0.5rem;
+}
+
+.footer__02__content :nth-of-type(1) {
+    color: #78cdf0;
+}
+
+.footer__02__content :nth-of-type(2) {
+    color: #537bbd;
+}
+
+.footer__02__content :nth-of-type(3) {
+    color: #eb5755;
+}
+
+.footer__03 {
+    display: flex;
+}
+
+.footer__03__content {
+    margin: auto;
+    display: flex;
+}
+
+.footer__03__text {
+    display: flex;
+}
+
+.footer__03__text p {
+    margin: auto 1rem auto auto;
+    color: var(--textColor);
+    font-size: 1.4rem;
+    font-style: italic;
+}
